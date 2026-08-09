@@ -1,20 +1,20 @@
 class Red < Formula
   desc "Modern, modal text editor built in Rust"
   homepage "https://github.com/codersauce/red"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/codersauce/red/releases/download/v0.3.0/red-aarch64-apple-darwin.tar.gz"
-      sha256 "eeefbd1908da8c84a3aa1c600ac208f4a8f27e7eedcd37afeea24b075c9e72a7"
+      url "https://github.com/codersauce/red/releases/download/v0.4.0/red-aarch64-apple-darwin.tar.gz"
+      sha256 "026aefdc4b799ae59ee6a2c4113c8779d02047760c37383366f8b79da357733c"
     else
-      url "https://github.com/codersauce/red/releases/download/v0.3.0/red-x86_64-apple-darwin.tar.gz"
-      sha256 "b587044ecfa4a6cb78931cd89ebc60c7b641a97173d868b60a138b0334b12c38"
+      url "https://github.com/codersauce/red/releases/download/v0.4.0/red-x86_64-apple-darwin.tar.gz"
+      sha256 "b5d48c34a5577fdf00a2d5de520f96baf45eb3f32be8417539b3e7c80d352262"
     end
   elsif OS.linux?
-    url "https://github.com/codersauce/red/releases/download/v0.3.0/red-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "0f5af8efebbc4c16bb0787889adbaf2d3d113da2dc287e0dec403e89de243480"
+    url "https://github.com/codersauce/red/releases/download/v0.4.0/red-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "c3b65fa87e2feb24c4052c9bbbf6ad926edc5f163b1a91429d2b651011b14251"
   end
 
   def install
